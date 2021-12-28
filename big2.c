@@ -3,7 +3,8 @@
 {
     int num1, num2;
     // Ask user to enter the two numbers
-    printf("Please Enter Two different values\n");
+    printf("==============================================\n***Biggest numbers***\n");
+    printf("Please Enter Two different values: ");
     // Read two numbers from the user
     scanf("%d %d", &num1, &num2);
     if(num1 > num2)
@@ -18,5 +19,5 @@
     {
         printf("Both are Equal\n");
     }
-    //  return 0;
+   // return 0;
 }

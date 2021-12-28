@@ -2,7 +2,7 @@
 sort()
 {
    int a[50], i,j,n,t;
-   printf("enter the No: of elements in the list:\n");
+   printf("==============================================\n***SORT***\nenter the No: of elements in the list:\n");
    scanf("%d", &n);
    printf("enter the elements:\n");
    for(i=0; i<n; i++){

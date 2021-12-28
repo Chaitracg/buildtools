@@ -1,27 +1,24 @@
 #include <stdio.h>
 rev()
 {
-   char s[1000], r[1000];
-   int begin, end, count = 0;
+  char str[1000], rev[1000];
+  int i, j, count = 0;
+  printf("==============================================\n");
+  printf("Enter the String : \n");
+  scanf("%s", str);
+  //finding the length of the string
+  while (str[count] != '\0')
+  {
+    count++;
+  }
+  j = count - 1;
 
-   printf("Input a string\n");
-   gets(s);
+  //reversing the string by swapping
+  for (i = 0; i < count; i++)
+  {
+    rev[i] = str[j];
+    j--;
+  }
 
-   // Calculating string length
-
-   while (s[count] != '\0')
-      count++;
-
-   end = count - 1;
-
-   for (begin = 0; begin < count; begin++) {
-      r[begin] = s[end];
-      end--;
-   }
-
-   r[begin] = '\0';
-
-   printf("%s\n", r);
-
-//   return 0;
+printf("String After Reverse: %s\n", rev);
 }
